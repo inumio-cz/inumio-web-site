@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="cs"><head><meta charset="utf-8"><script>
+      // Před vykreslením: .js (vylepšení s JS) a .rv (animace při skrolování, jen bez „omezit pohyb“).
+      // Pojistka: když se hlavní skript do 3 s nespustí, animace se vypne a obsah je vidět.
+      (function () {
+        var d = document.documentElement;
+        d.classList.add('js');
+        if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          d.classList.add('rv');
+          setTimeout(function () { if (!window.__inumioReady) d.classList.remove('rv'); }, 3000);
+        }
+      })();
+    </script><meta name="viewport" content="width=device-width, initial-scale=1"><title>404 — iNumio</title><meta name="description" content><link rel="canonical" href="https://www.inumio.cz/cs/"><link rel="alternate" hreflang="cs" href="https://www.inumio.cz/cs/"><link rel="alternate" hreflang="en" href="https://www.inumio.cz/en/"><link rel="alternate" hreflang="x-default" href="https://www.inumio.cz/cs/"><meta property="og:type" content="website"><meta property="og:title" content="404 — iNumio"><meta property="og:description" content><meta property="og:url" content="https://www.inumio.cz/cs/"><meta property="og:locale" content="cs_CZ"><meta name="theme-color" content="#0a1626"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="stylesheet" href="/_astro/Base.CDqVg4jB.css"></head><body><main id="main" class="surface-dark" style="min-height:100vh;display:grid;place-items:center;padding:2rem;text-align:center"><div><p style="font-family:var(--font-mono);color:var(--signal)">404</p><p style="margin-top:1rem"><a href="/cs/">iNumio · CZ</a> &nbsp;·&nbsp; <a href="/en/">iNumio · EN</a></p></div></main><script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.B1tm9QCi.js"></script></body></html>
